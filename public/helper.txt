@@ -1,0 +1,14 @@
+btnsNav.forEach((el ,index)=> {
+    el.addEventListener('click',()=>{
+        saveState = index;
+        for(let key=0 ; key<dropNav.length ; key++) {
+            if(key == saveState) continue;
+            console.log(key)
+            dropNav[key].classList.remove('active')
+        }
+        !dropNav[index].classList.contains('active') ? dropNav[index].classList.add('active') : dropNav[index].classList.remove('active');
+        
+        console.log("etat",saveState);
+    })
+})
+
