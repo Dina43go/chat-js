@@ -48,6 +48,28 @@ body {
   font-family: sans-serif;
 }
 
+#loader {
+  position:fixed;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#loader.escape {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#loader > img {
+  height: 18em;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-user-drag: none;
+}
+
 .mainApplication {
   height: 80vh;
   width: 70%;
@@ -525,7 +547,7 @@ body {
   justify-content: center;
 }
 
-.over-flow .drop-fils.active {
+.over-flow .drop-fils.up {
   position: relative;
   /* display: none; */
   height: 17em;
@@ -535,9 +557,9 @@ body {
   visibility: visible;
 }
 
-.over-flow .drop-fils.activeCommon {
-  background-color: ghostwhite;
-  border: 3px dotted var(--test-color);
+.over-flow .drop-fils.active {
+  background-color: rgb(249, 246, 255) !important;
+  border: 3px solid var(--test-color) !important;
 }
 
 .drop-fils .fils-list {

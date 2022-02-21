@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="/public/src/css/animations.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script>
+        /*
+        * When widows loaded
+        */
+        window.addEventListener('load' , (e)=>{
+            document.querySelector('#loader').classList.add('escape')
+        })
+    </script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>chat</title>
+</head>
+<body>
+    <div id="loader">
+        <img src="./src/icons/fruit.gif" alt="">
+    </div>
+    
+    <main class="mainApplication">
+        <div class="sideBare">
+            <div class="nav">
+                <div class="brand center">
+                    <!-- icon de l'application -->
+                    <i class='bx bxs-lemon '></i>
+                    <span class="info-bulle"> chat app</span>
+                </div>
+                <div class="ligne"></div>
+                <div class="tuild">
+                    <ul>
+                        <li class="center">
+                            <a href="#"><i class="bx fi fi-rr-comments"></i></a>
+                            <span class="info-bulle"> messages</span>
+                        </li>
+                        <li class="center">
+                            <a href="#"><i class="bx fi fi-rr-address-book"></i></a>
+                            <span class="info-bulle"> contacts</span>
+                        </li>
+                        <li class="center">
+                            <a href="#"><i class="bx fi fi-rr-bell"></i></a>
+                            <span class="info-bulle"> notifications</span>
+                        </li>
+                    </ul>
+                    <div class="info">
+                        <div class="center wrap-image2">
+                            <!-- <a href="#"><i class="fi fi-rr-interrogation"></i></a> -->
+                            <img class="img-ctl" src="./src/icons/mrLapin.jpg" alt="profile">
+                            <span class="info-bulle"> profile </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drop-nav">
+                <div class="drop-nav-child ">
+                    <div class="fit-child">
+                        <form action="" class="search-disc">
+                            <input type="text" placeholder="discussions..">
+                            <div class="wrap-icon"><i class='bx bx-search'></i></div>
+                        </form>
+                        <div class="list">
+                            <!-- list -->
+                            <div class="discussion-item">
+                                <div class="wrap-image"><img class="img-ctl" src="./src/icons/radio.jpg" alt=""></div>
+                                <div class="message-info">
+                                    <div class="name">AHISSOU Loid</div>
+                                    <div class="message-content">
+                                        <i class='bx bx-file'></i>
+                                        <span class="message-content">salut cours_projet...</span>
+                                    </div>
+                                </div>
+                                <span class="status green" ></span>
+                                <span class="nomber-mess"></span>
+                            </div>
+                            <!-- component -->
+                            <div class="discussion-item">
+                                <div class="wrap-image"><img class="img-ctl" src="./src/icons/rabbit.jpg" alt=""></div>
+                                <div class="message-info">
+                                    <div class="name">SALANON Bill</div>
+                                    <div class="message-content">
+                                        <!-- <i class='bx bx-file'></i> -->
+                                        <span class="message-content">salut cours_projet...</span>
+                                    </div>
+                                </div>
+                                <span class="status red" ></span>
+                                <span class="nomber-mess">99+</span>
+                            </div>
+                            <!-- component -->
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-nav-child">
+                    <div class="fit-child">
+                        <form action="" class="search-disc">
+                            <input type="text" placeholder="contacts..">
+                            <div class="wrap-icon"><i class='bx bx-search'></i></div>
+                        </form>
+                        <div class="spacer">List</div>
+                        <div class="list">
+                            <div class="alphabet">S.</div>
+                            <div class="discussion-item">
+                                <div class="wrap-image"><img class="img-ctl" src="./src/icons/rabbit.jpg" alt=""></div>
+                                <div class="message-info">
+                                    <div class="name">SALANON Bill</div>
+                                </div>
+                                <span class="status green" ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-nav-child">
+                    <div class="fit-child">
+                        <div class="search-disc">
+                            <div class="branl">
+                                notifications
+                            </div>
+                        </div>
+                        <div class="list">
+                            <!-- list -->
+                            <div class="wrap-img">
+                                <img class="img-ctl" src="./src/icons/sad_lemmon.png" alt="">
+                                <p>Aucune notification pour l'instant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="corps">
+
+            <div class="messengerBox">
+                <!-- la boite de messagerie du chat application -->
+                <div class="profil"> 
+                    <div class="identity" >
+                        <div class="name"> Ahossou Loïd</div>
+                        <div class="status">
+                            <div class="display-me">
+                                <div>en ligne</div>
+                            </div> 
+                            <span></span>
+                        </div>                 
+                    </div>
+                    <div class="developpe">
+                        <div><i class='bx bx-chevron-down'></i></div>
+                    </div>
+                </div>
+                <div class="messagerie">
+                    <!-- main -->
+                    <div class="wrap-message" position="right" id="123">
+                        <div class="message">
+                            <div class="img-ctl">
+                                <img class="img-ctl" src="./src/icons/radio.jpg" alt="">
+                            </div>
+                            <div class="text">cc je suis de retour et je veux que tu me donne un truc à manger</div>
+                            <div class="time">00 : 27</div>
+                        </div>
+                        <div class="delete">
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+                    <div class="wrap-message" position="left" id="123">
+                        <div class="message">
+                            <div class="img-ctl">
+                                <!-- <img class="img-ctl" src="./src/icons/radio.jpg" alt=""> -->
+                            </div>
+                            <div class="text">cc je suis de retour et je veux que tu me donne un truc à manger</div>
+                            <div class="time">00 : 27</div>
+                        </div>
+                        <div class="delete">
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+
+                    <div class="wrap-message" position="left" id="123">
+                        <div class="message">
+                            <div class="img-ctl">
+                                <img class="img-ctl" src="./src/icons/fruit.gif" alt="">
+                            </div>
+                            <!-- <div class="text">cc je suis de retour et je veux que tu me donne un truc à manger</div> -->
+                            <div class="time">00 : 27</div>
+                        </div>
+                        <div class="delete">
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+
+                    <div class="wrap-message" position="right" id="123">
+                        <div class="message">
+                            <div class="img-ctl">
+                                <img class="img-ctl" src="./src/icons/radio.jpg" alt="">
+                            </div>
+                            <div class="text">cc je suis de retour et je veux que tu me donne un truc à manger</div>
+                            <div class="time">00 : 27</div>
+                        </div>
+                        <div class="delete">
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="typing">
+                    <!-- ^ active element -->
+                    <div class="text">quelqu'un écrit&nbsp;<i class='bx bx-dots-horizontal-rounded bx-flashing' ></i> </div>
+                </div>
+            </div>
+            <form action="" class="inputSection">
+                <!-- :TODO gérer les fonctionnalitées -->
+                <div class="over-flow">
+                    <!-- active : .up -->
+                    <div class="drop-fils">
+                        <ul class="fils-list">
+                            <li>
+                                <i class='bx bx-file-blank'></i>
+                                <span>Fichiers . <span>images</span> . Videos</span>
+                                <input type="file" name="messagefile" id="messagefile">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emoji-content"></div>
+                <!-- fin du :TODO -->
+                <div class="wrap-input">
+                    <!-- pour tous les données entrant -->
+                    <div class="wrap-champ">
+                        <input type="text">
+                        <!-- <span>124</span> -->
+                    </div>
+                    <div class="messagerie-option">
+                        <ul>
+                            <li class="center">
+                                <a href="/"><i class='bx bx-smile bx-tada'></i></i></a>
+                                <span class="info-bulleTop">emoji : )</span>
+                            </li>
+                            <li id="uploded" class="center">
+                                <a href="/"><i class='bx bx-upload' ></i></a>
+                                <span class="info-bulleTop"> telecharger un fichier</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div class="filter"></div>
+</body>
+<script type="module" src="./js/main.js"></script>
+<script>
+    
+</script>
+<!-- <script>
+    let gi = document.querySelector('.identity .status')
+    let status = document.querySelector('.status span')
+    
+    setInterval(()=>{
+        gi.classList.remove('on-line')
+        status.classList.remove('green');
+
+        setTimeout(()=>{
+            status.classList.add('green');
+            gi.classList.add('on-line')
+        },6000)
+    },9000)
+</script> -->
+<!-- <script>
+    setInterval(()=>{
+        document.getElementsByClassName('typing')[0].classList.add('active');
+        setTimeout(()=>{
+            document.getElementsByClassName('typing')[0].classList.remove('active');
+        },6000)
+    },9000)
+</script> -->
+</html>

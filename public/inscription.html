@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/auth.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>Inscription</title>
+</head>
+<body>
+
+    <form class="inscription center">
+        <div class="next">
+                <h2>Inscription</h2>
+                <div class="field-control">
+                  <input class="champs" type="text" name="name" placeholder="nom et prenom">
+                </div>
+                <div class="field-control">
+                  <input class="champs" type="password" name="password" placeholder="mot de passe">
+                </div>
+                <div class="field-control">
+                  <button class="inputStyle">suivant</button>
+                </div>
+              <a href="./index.html">Aviez vous déjà un compte ? </a>
+        </div>
+
+        <div class="area">
+            <div class="wrap-img">
+                <img class="img-ctl profile-selection" src="./src/icons/sad_lemmon.png" alt="">
+            </div>
+            <div class="dragArea">
+                <div class="info-text center">
+                    <div>glisser une image <span class="gras">ici</span></div>
+                    <div class="cx">sélectioné : )</div>
+                    <input id="inputf" type="file" name="files" id="" >
+                </div>
+            </div>
+            <div class="field-control">
+                <button id="btn2" class="inputStyle">se connecter</button>
+            </div>
+        </div>
+
+    </form>
+    <script type="module" src="./js/inscription.js"></script>
+</body>
+</html>
